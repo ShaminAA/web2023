@@ -1,0 +1,65 @@
+body {
+	padding: 0;/**/
+	margin: 0;/**/
+	font-family: 'Montsserat', sans-serif;/**/
+	color: black;/**/
+	font-size: 16px;/**/
+}
+:root{
+	--cvet: #343158;/**/
+}
+.main {
+    background-color: #27ae60;/**/
+}
+.news {
+    background-color: #9b59b6;/**/
+}
+.contacts {
+    background-color: #3498db;/**/
+}
+.portfolio {
+    background-color: #f1c40f;/**/
+}
+.menu {
+    position: fixed;/**/
+    left: 0;/**/
+    top: 99;/**/
+    z-index: 99;/*сделанодля того чтобыменю было над контентом*/
+    width: 15%;/*ширина*/
+    height: 100vh;/*высота во весь экран*/
+    display: flex; /**/
+    align-items: center;/**/
+    justify-content: center;/**/
+    background-color: var(--cvet);/**/
+    transition: 0.5s;/*время изменения*/
+    transform: translateX(0%);/*спратать меню по х на 100% от велецины*/
+    opacity: 0.8;
+}
+.menu_active {
+    transform: translateX(0%);/*поевление меню при активации*/
+}
+.menu-list {
+    display: flex;/**/
+    justify-content: space-around;/**/
+    align-items: center;/**/
+    height: 50%;/**/
+    flex-direction: column;/**/
+}
+.menu-list a {
+    text-decoration: none;/*убоать подчеркивания у ссылок*/
+    text-transform: uppercase;/*Слова заглавными буквами*/
+    font-weight: 700;/*жирность шрифта*/
+    color: #fff;
+}
+.menu-list a:hover {
+    color: rgb(64, 250, 237);
+    font-weight: 900;
+}
+.menu-btn {
+    width: 20px;/*ширина*/
+    height: 20px;/*высота*/
+    background-color: #333;/*фоновый цвет*/
+    position: absolute;/*прикрепление*/
+    right: -30px;/*отступ от правой границы*/
+    top: 10px;/*отступ от вверхней границы*/
+}
